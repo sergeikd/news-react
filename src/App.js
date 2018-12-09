@@ -4,13 +4,14 @@ import PropTypes from 'prop-types';
 import { Content } from './components/Content/content'
 import { getNews } from './components/Api/api'
 import { TabMenu } from './components/TabMenu/tabMenu'
+import { themes } from './app-data/app-data'
 import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      themes: ['People', 'Auto', 'Technology', 'Realty'],
+      themes: themes,
       content: [],
       activeTab: 0,
     };
